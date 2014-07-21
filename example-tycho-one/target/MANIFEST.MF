@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-Version: 0.0.1.201407211418
+Bundle-Name: example-tycho-one
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: example-tycho-one
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

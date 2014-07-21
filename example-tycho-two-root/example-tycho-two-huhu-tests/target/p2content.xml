@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='example-tycho-two-huhu-tests' version='0.0.1.201407211444' singleton='false'>
+    <update id='example-tycho-two-huhu-tests' range='[0.0.0,0.0.1.201407211444)' severity='0'/>
+    <properties size='4'>
+      <property name='org.eclipse.equinox.p2.name' value='example-tycho-two-huhu-tests'/>
+      <property name='maven-groupId' value='lunifera-maven-examples'/>
+      <property name='maven-artifactId' value='example-tycho-two-huhu-tests'/>
+      <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='example-tycho-two-huhu-tests' version='0.0.1.201407211444'/>
+      <provided namespace='osgi.bundle' name='example-tycho-two-huhu-tests' version='0.0.1.201407211444'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.junit' range='4.11.0'/>
+      <required namespace='osgi.bundle' name='example-tycho-two-huhu' range='0.0.1'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='example-tycho-two-huhu-tests' version='0.0.1.201407211444'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: example-tycho-two-huhu-tests&#xA;Bundle-Version: 0.0.1.201407211444&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

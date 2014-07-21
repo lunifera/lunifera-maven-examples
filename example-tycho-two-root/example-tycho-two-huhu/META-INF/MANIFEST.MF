@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: example-tycho-two-huhu
+Bundle-SymbolicName: example-tycho-two-huhu
+Bundle-Version: 0.0.1.qualifier
+Export-Package: org.lunifera.maven.example.tycho.two.huhu

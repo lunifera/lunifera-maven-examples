@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='example-tycho-one' version='0.0.1.201407211418' singleton='false'>
+    <update id='example-tycho-one' range='[0.0.0,0.0.1.201407211418)' severity='0'/>
+    <properties size='4'>
+      <property name='org.eclipse.equinox.p2.name' value='example-tycho-one'/>
+      <property name='maven-groupId' value='lunifera-maven-examples'/>
+      <property name='maven-artifactId' value='example-tycho-one'/>
+      <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='example-tycho-one' version='0.0.1.201407211418'/>
+      <provided namespace='osgi.bundle' name='example-tycho-one' version='0.0.1.201407211418'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='example-tycho-one' version='0.0.1.201407211418'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: example-tycho-one&#xA;Bundle-Version: 0.0.1.201407211418&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

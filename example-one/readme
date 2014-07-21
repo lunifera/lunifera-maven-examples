@@ -1,0 +1,16 @@
+1) mvn clean verify
+
+2) lets fail test
+
+3) use -DskipTests
+
+4) remove failure in test
+
+5) mvn clean verify
+
+6) check jar
+
+7) add test scope 
+
+8) mvn clean install
+

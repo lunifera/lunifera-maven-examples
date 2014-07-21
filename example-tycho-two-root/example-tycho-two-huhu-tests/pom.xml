@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>lunifera-maven-examples</groupId>
+    <artifactId>example-tycho-two-root</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>example-tycho-two-huhu-tests</artifactId>
+  <packaging>eclipse-test-plugin</packaging>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-surefire-plugin</artifactId>
+        <configuration>
+<!--           <useUIHarness>true</useUIHarness> -->
+        </configuration>
+      </plugin>
+    </plugins>
+     <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.eclipse.tycho</groupId>
+              <artifactId>tycho-surefire-plugin</artifactId>
+              <version>${tycho-version}</version>
+              <configuration>
+                <argLine>-XstartOnFirstThread</argLine>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+  </build>
+
+<!--   <profiles> -->
+<!--     <profile> -->
+<!--       <id>some</id> -->
+<!--       <activation> -->
+<!--         <activeByDefault>true</activeByDefault> -->
+<!--       </activation> -->
+<!--       <build> -->
+<!--         <pluginManagement> -->
+<!--           <plugins> -->
+<!--             <plugin> -->
+<!--               <groupId>org.eclipse.tycho</groupId> -->
+<!--               <artifactId>tycho-surefire-plugin</artifactId> -->
+<!--               <version>${tycho-version}</version> -->
+<!--               <configuration> -->
+<!--                 <argLine>-XstartOnFirstThread</argLine> -->
+<!--               </configuration> -->
+<!--             </plugin> -->
+<!--           </plugins> -->
+<!--         </pluginManagement> -->
+<!--       </build> -->
+<!--     </profile> -->
+<!--   </profiles> -->
+  
+</project>

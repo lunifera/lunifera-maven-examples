@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>lunifera-maven-examples</groupId>
+	<artifactId>example-two-root</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>build-all</id>
+			<activation>
+				<!-- <activeByDefault>true</activeByDefault> -->
+			</activation>
+			<modules>
+				<module>example-two</module>
+				<module>example-two-huhu</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>build-huhu</id>
+			<activation>
+				<property>
+					<name>my.huhu</name>
+				</property>
+			</activation>
+			<modules>
+				<module>example-two-huhu</module>
+			</modules>
+		</profile>
+	</profiles>
+</project>
