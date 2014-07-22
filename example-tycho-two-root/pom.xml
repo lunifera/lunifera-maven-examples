@@ -13,6 +13,8 @@
 	<modules>
 		<module>example-tycho-two-huhu</module>
 		<module>example-tycho-two-huhu-tests</module>
+		<module>example-tycho-two-feature</module>
+		<module>example-tycho-two-p2</module>
 	</modules>
 
 	<repositories>
@@ -24,12 +26,26 @@
 	</repositories>
 
 	<build>
+		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
